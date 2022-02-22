@@ -1,0 +1,53 @@
+Hyperparameter vs Parameters
+
+Hyperparameters are components of the model that you set. They are not learned during the modeling process
+
+Parameter are not set by you. The algorithm will discover these for you
+
+You Learned:
+
+* Some hyperparameters are better  to start with than others
+
+* There are silly values you can set for hyperparameters
+
+
+* You need to beware of conflicting hyperparameters
+
+* Best practices is specific to algorithms and their hyperparameters
+
+We introduced grid search:
+
+
+* Construct a matrix (or 'grid') of hyperparameter combinations and values
+
+* Build models for all the different hyperparameter combinations
+
+* Then pick the winner
+
+
+* A computationally expensive option but is guaranteed to find the best in your grid.(Remember the importance of setting a good grid!)
+
+
+Random Search:
+
+* Very similar to grid search
+
+* Main difference is selecting(n) random combinations
+
+
+This method is faster at getting a reasonable model but will not get the best in your grid
+
+
+Looking at informed search:
+
+In informed search, each iteration learns from the last, whereas in Grid and Random, modelling is all done at once and then best is picked.
+
+
+Informed methods explored were:
+
+*'Coarse to Fine'(Iterative random then grid search)
+
+* Bayesian Hyperparameter tunning, updating beliefs using evidence on model perfomance
+
+
+* Genetic algorithms, evolving your models over generations.
